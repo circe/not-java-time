@@ -20,7 +20,7 @@ lazy val notJavaTime = crossProject(JSPlatform)
     moduleName := "not-java-time",
     libraryDependencies ++= Seq(
       "io.circe" %%% "circe-core" % "0.12.0-M3" % Test,
-      "org.scalatest" %%% "scalatest" % "3.0.8"
+      "org.scalatest" %%% "scalatest" % "3.0.8" % Test
     )
   )
 
