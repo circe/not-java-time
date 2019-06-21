@@ -5,9 +5,11 @@ organization in ThisBuild := "io.circe"
 val root = project
   .in(file("."))
   .aggregate(notJavaTimeJs)
+  .settings(publishSettings)
   .settings(
     publish := {},
-    publishLocal := {}
+    publishLocal := {},
+    publishArtifact := false
   )
 
 lazy val notJavaTime = crossProject(JSPlatform)
