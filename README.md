@@ -37,7 +37,7 @@ add this to your build:
 
 ```scala
 .jsSettings(
-  libraryDependencies += "io.circe" %%% "not-java-time" % "0.1.0"
+  libraryDependencies += "io.circe" %%% "not-java-time" % "0.2.0"
 )
 ```
 
