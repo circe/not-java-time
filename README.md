@@ -4,6 +4,17 @@
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-green.svg)](https://gitter.im/circe/circe)
 [![Maven Central](https://img.shields.io/maven-central/v/io.circe/not-java-time_sjs0.6_2.13.svg)](https://maven-badges.herokuapp.com/maven-central/io.circe/not-java-time_sjs0.6_2.13)
 
+### Update
+
+The circe 0.12.x releases [no longer require](https://github.com/circe/circe/issues/1245#issuecomment-529189171)
+a `java.time` implementation on Scala.js, and this is unlikely to change in future releases.
+
+I'll continue to maintain this library as a public service, and will happily accept pull requests
+supporting additional parts of the API from anyone who needs them. You _can_ still use this library
+with circe 0.12.x or later releases, and the runtime exceptions it throws if you accidentally use the
+`java.time` codecs (`scala.NotImplementedError: Get a real java.time`) are at least arguably a little
+more helpful than the runtime linking errors you'd get without it.
+
 ### Wtf is this
 
 This project is a mostly unimplemented `java.time` implementation.
